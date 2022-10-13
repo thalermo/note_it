@@ -21,9 +21,7 @@ function App() {
       <section className="container-logs">
         <h2 className="container-logs--log-title">Check it.</h2>
         {/* will use a map method to render the cards soon ➡️ */}
-        <div className="container-logs--logs-collection">
-          <NotesList />
-        </div>
+        <NotesList />
       </section>
     </div>
   );

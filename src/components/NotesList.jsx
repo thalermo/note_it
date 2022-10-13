@@ -1,8 +1,9 @@
 import Note from './Note';
+import '../App.css';
 
 const NotesList = () => {
   return (
-    <div className="note-list">
+    <div className="container-logs--logs-collection">
       <Note />
       <Note />
       <Note />
