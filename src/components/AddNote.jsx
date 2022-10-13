@@ -12,9 +12,14 @@ const AddNote = (props) => {
     props.handleAddNote(noteText);
   };
 
+  const handleResetClick = () => {
+    setNoteText('');
+  };
+
   return (
     <>
       <textarea
+        value={noteText}
         className="container-edit--input-field"
         rows="10"
         cols="10"
@@ -22,7 +27,7 @@ const AddNote = (props) => {
         onChange={handleChange}
       />
       <div className="container-edit--btns">
-        <button className="btn-primary reset" />
+        <button className="btn-primary reset" onClick={handleResetClick} />
         <button className="btn-primary save" onClick={handleSaveClick} />
       </div>
     </>

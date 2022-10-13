@@ -33,7 +33,15 @@ function App() {
   ]);
 
   const handleAddNote = (text) => {
-    console.log(text);
+    const date = new Date();
+    const newNote = {
+      id: nanoid(),
+      headline: text,
+      text: '',
+      timeStamp: date.toLocaleDateString(),
+    };
+    const newNotes = [...notes, newNote];
+    setNotes(newNotes);
   };
 
   return (
