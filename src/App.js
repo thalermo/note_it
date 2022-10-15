@@ -3,6 +3,8 @@ import './App.css';
 import NotesList from './components/NotesList';
 import { nanoid } from 'nanoid';
 import AddNote from './components/AddNote';
+import SearchBar from './components/SearchBar';
+import Header from './components/Header';
 
 function App() {
   const [notes, setNotes] = React.useState([
@@ -32,6 +34,9 @@ function App() {
     },
   ]);
 
+  const [searchText, setSearchText] = React.useState('');
+  const [themeMode, setThemeMode] = React.useState(false);
+
   const handleAddNote = (text) => {
     const date = new Date();
     const newNote = {
@@ -44,18 +49,32 @@ function App() {
     setNotes(newNotes);
   };
 
-  return (
-    <div className="App">
-      <section className="container-edit">
-        <h1 className="container-edit--app-title">Note it.</h1>
-        <AddNote handleAddNote={handleAddNote} />
-      </section>
+  const handleDeleteNote = (id) => {
+    const newNotes = notes.filter((el) => el.id !== id);
+    setNotes(newNotes);
+  };
 
-      <section className="container-logs">
-        <h2 className="container-logs--log-title">Check it.</h2>
-        {/* will use a map method to render the cards soon ➡️ */}
-        <NotesList notes={notes} />
-      </section>
+  const searchFilterMethod = notes.filter((el) =>
+    el.headline.toLocaleLowerCase().includes(searchText)
+  );
+
+  return (
+    <div className={`${themeMode && 'night-mode'}`}>
+      <div className="App">
+        <section className="container-edit">
+          <Header setThemeMode={setThemeMode} />
+          <SearchBar setSearchText={setSearchText} />
+          <AddNote handleAddNote={handleAddNote} />
+        </section>
+        <section className="container-logs">
+          <h2 className="container-logs--log-title">Check it.</h2>
+          {/* will use a map method to render the cards soon ➡️ */}
+          <NotesList
+            notes={searchFilterMethod}
+            handleDeleteNote={handleDeleteNote}
+          />
+        </section>
+      </div>
     </div>
   );
 }

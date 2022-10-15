@@ -7,7 +7,12 @@ const Note = (props) => {
       <p className="card-note--date-stamp">{props.timeStamp}</p>
 
       <button className="btn-secondary edit" />
-      <button className="btn-secondary delete" />
+      <button
+        className="btn-secondary delete"
+        onClick={() => {
+          props.handleDeleteNote(props.id);
+        }}
+      />
     </div>
   );
 };

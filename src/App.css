@@ -14,7 +14,7 @@
   margin-top: 1em;
 }
 
-/* btns in the app  */
+/* $$$$$$$ btns in the app $$$$$$$$ */
 
 .btn-primary {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -71,10 +71,51 @@
   background-size: 35px;
 }
 
-/* ############## Typography ################# */
+.dark-mode--btn {
+  background-image: url(./images/night_icon.svg);
+}
+.party-mode--btn {
+  background-image: url(./images/party_icon.svg);
+  background-position: 0 -7px;
+}
+
+/* ################ 
+      Typography 
+  ################# */
+
+/* ----------search-box ------------------- */
+
+.search-box {
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 30px;
+}
+
+.search-icon {
+  width: 30px;
+  stroke: white;
+}
+
+.search-input {
+  border: 0;
+  width: 100%;
+  outline: none;
+  font-size: 1.5rem;
+  text-indent: 0.5em;
+  border-radius: 13px;
+  padding: 0.25rem;
+}
+
+.search-input::placeholder {
+  font-size: 1.5rem;
+}
 
 /* ----------container-edit ------------------- */
-.container-edit--app-title {
+/*  >>----header-box-----<< */
+.header-box--app-title {
   font-weight: 700;
   font-size: 5.5rem;
   letter-spacing: -2px;
@@ -86,6 +127,7 @@
   border: 2px solid rgb(50, 50, 50);
   box-shadow: 0px 6px 8px 1px rgba(61, 61, 61, 0.5);
   border-radius: 25px;
+  white-space: pre-wrap;
 
   width: 100%;
   resize: none;
@@ -130,7 +172,27 @@
   width: 80%;
 }
 
-/* #################### layout #################### */
+/* #################### 
+          layout 
+####################### */
+
+/* ----------container-edit ------------------- */
+
+/* >>----header-box ---------<< */
+
+.header-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* >>------search-box --------<< */
+.search-box {
+  display: flex;
+  gap: 1rem;
+}
+
 /* ----------container-edit ------------------- */
 .container-edit {
   width: 90%;
@@ -192,7 +254,18 @@
   bottom: 1px;
 }
 
-/* ########### media queries ########### */
+/* ################ 
+    Themes
+  ################# */
+
+.night-mode {
+  background-color: #000;
+  color: #fff;
+}
+
+/* ################ 
+    Media Queries 
+  ################# */
 
 @media screen and (max-width: 501px) {
   * {

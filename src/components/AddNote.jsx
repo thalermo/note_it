@@ -9,7 +9,11 @@ const AddNote = (props) => {
   };
 
   const handleSaveClick = () => {
-    props.handleAddNote(noteText);
+    // to check the white space and clear the text area after saving
+    if (noteText.trim().length > 0) {
+      props.handleAddNote(noteText);
+      setNoteText('');
+    }
   };
 
   const handleResetClick = () => {
