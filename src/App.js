@@ -5,6 +5,7 @@ import { nanoid } from 'nanoid';
 import AddNote from './components/AddNote';
 import SearchBar from './components/SearchBar';
 import Header from './components/Header';
+import { useEffect } from 'react';
 
 function App() {
   const [notes, setNotes] = React.useState([
@@ -35,7 +36,17 @@ function App() {
   ]);
 
   const [searchText, setSearchText] = React.useState('');
-  const [themeMode, setThemeMode] = React.useState(false);
+  //  const [themeMode, setThemeMode] = React.useState(false);
+  const [themeMode, setThemeMode] = React.useState('default');
+
+  // useEffect(() => {
+  //   JSON.parse(localStorage.getItem('react-note-app-data'));
+  //   console.log('mount');
+  // }, []);
+
+  // useEffect(() => {
+  //   localStorage.setItem('react-notes-app-data', JSON.stringify(notes));
+  // }, [notes]);
 
   const handleAddNote = (text) => {
     const date = new Date();
@@ -59,10 +70,10 @@ function App() {
   );
 
   return (
-    <div className={`${themeMode && 'night-mode'}`}>
+    <div className={`${themeMode}`}>
       <div className="App">
         <section className="container-edit">
-          <Header setThemeMode={setThemeMode} />
+          <Header setThemeMode={setThemeMode} themeMode={themeMode} />
           <SearchBar setSearchText={setSearchText} />
           <AddNote handleAddNote={handleAddNote} />
         </section>

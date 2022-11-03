@@ -7,11 +7,12 @@
 .App {
   font-family: 'Inter', sans-serif;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   flex-direction: column;
   align-items: center;
   gap: 3rem;
-  margin-top: 1em;
+  /* margin-top: 1em; */
+  min-height: 100vh;
 }
 
 /* $$$$$$$ btns in the app $$$$$$$$ */
@@ -107,6 +108,7 @@
   text-indent: 0.5em;
   border-radius: 13px;
   padding: 0.25rem;
+  background-color: #fff;
 }
 
 .search-input::placeholder {
@@ -185,6 +187,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-top: 3rem;
 }
 
 /* >>------search-box --------<< */
@@ -260,6 +263,11 @@
 
 .night-mode {
   background-color: #000;
+  color: #fff;
+}
+
+.party-mode {
+  background-color: rgb(255, 0, 247);
   color: #fff;
 }
 
