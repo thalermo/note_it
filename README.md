@@ -43,7 +43,7 @@ npm i nanoid
 
 ### 🎨 Check my wireframe in Figma
 
-<h4> ➡️ Duplicate my wireframe and clone my App, I would love to see your result:)</h4>
+➡️ Duplicate my wireframe and clone my App, I would love to see your result:)</
 
 <a href="https://www.figma.com/file/nMy5K9G6IpVROuhCtDenNz/note_it-(Repo)?node-id=0%3A1&t=BCeTSXEBppTjUkFs-1" target="blank">Click here to check my Figma</a>
 
