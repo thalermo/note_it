@@ -1,7 +1,8 @@
 import React from 'react';
-import '../App.css';
 
-const AddNote = (props) => {
+// ------ ADD NOTE FUNCTION --------
+
+function AddNote(props) {
   const [noteText, setNoteText] = React.useState('');
 
   const handleChange = (event) => {
@@ -9,7 +10,7 @@ const AddNote = (props) => {
   };
 
   const handleSaveClick = () => {
-    // to check the white space and clear the text area after saving
+    // condition to check the white space and clear the text area after saving
     if (noteText.trim().length > 0) {
       props.handleAddNote(noteText);
       setNoteText('');

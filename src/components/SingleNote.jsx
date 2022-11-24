@@ -1,6 +1,9 @@
 import React from 'react';
 
-const Note = (props) => {
+// ADD SINGLE NOTE FUNCTION contains the delete button and the handleDelete function 
+// Todo: make the edit function also working
+
+function SingleNote(props) {
   return (
     <div className="card-note" id={props.id}>
       <h3 className="card-note--headline-note">{props.headline}</h3>
@@ -17,4 +20,4 @@ const Note = (props) => {
   );
 };
 
-export default Note;
+export default SingleNote;

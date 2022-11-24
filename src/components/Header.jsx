@@ -1,7 +1,12 @@
 import React from 'react';
-import '../App.css';
 
-const Header = (props) => {
+// HEADER COMPONENT, contains the title, the toggle buttons 
+
+function Header(props) {
+
+  // --- THE LOGIC OF THE TOGGLE BUTTONS ---
+
+  //  -> Dark mode 
   const handleToggleDarkMode = () => {
     if (props.themeMode === 'default' || props.themeMode === 'party-mode') {
       props.setThemeMode('night-mode');
@@ -10,6 +15,7 @@ const Header = (props) => {
     }
   };
 
+  //  -> Party mode 
   const handleTogglePartyMode = () => {
     if (props.themeMode === 'default' || props.themeMode === 'night-mode') {
       props.setThemeMode('party-mode');

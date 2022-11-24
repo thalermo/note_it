@@ -1,7 +1,10 @@
 import React from 'react';
-import '../App.css';
 
-const SearchBar = (props) => {
+// THE SEARCH BAR COMPONENT contains the eventListener onChange & the search icon
+
+function SearchBar(props) {
+
+  // the handleChange function 
   const handleSearchChange = (event) => {
     props.setSearchText(event.target.value);
   };
