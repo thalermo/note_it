@@ -8,12 +8,9 @@
 <div>
 
 Note it is a note app, where to user can easily take notes with self-made wireframes using Figam &
-toggle feature to change the theme of the app. Feel free to scroll, and check the highlight of my code 😉
+toggle feature to change the theme of the app. Feel free to scroll, and check the highlight of my code 😉 [ Click to visit the website](http://sage-crisp-5daf9b.netlify.app 'VIsit the website')
 
 </div>
-<br>
-
-[ Click to visit the website](http://sage-crisp-5daf9b.netlify.app 'VIsit the website')
 
   <h2>Table of Contents</h2>
 
@@ -135,7 +132,7 @@ the app for the medium, screen devices -->
 
 </details><br>
 
-<summery>Mapping method</summery>
+<h4>Mapping method</h4>
 
 <details>
 
