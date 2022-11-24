@@ -2,17 +2,18 @@
 
 <h1>
 
-[Visit the website](https://kichisworld-next-generation.netlify.app 'check the website ')
+[Visit the website](https://sage-crisp-5daf9b.netlify.app 'check the website ')
 
 </h1>
 <div>
 
-Note it is a note app, where to user can easily take notes with self-made wireframes using Figam & toggle feature to change the theme of the app. Feel free to scroll, and check the highlight of my code 😉
+Note it is a note app, where to user can easily take notes with self-made wireframes using Figam &
+toggle feature to change the theme of the app. Feel free to scroll, and check the highlight of my code 😉
 
 </div>
 <br>
 
-![Visit the website]( 'visit the website ')
+[ Click to visit the website](http://sage-crisp-5daf9b.netlify.app 'VIsit the website')
 
   <h2>Table of Contents</h2>
 
@@ -37,17 +38,15 @@ npm i nanoid
 
 ### 🦋 Inspiration
 
-  <details>
-
 **THE IDEA:** I consider a note app for the most essential skills for a developer, where you store, add, remove and filter from certain information.
 
 **THE UX/UI INSPIRATION:** The app is inspired by the black & white clean and minimal layout. To make it more interesting for the user, I added two themes: dark theme & party theme to make the ux more individually
 
-</details><hr>
+<hr>
 
 ### 🎨 Check my wireframe in Figma
 
-<summery>Duplicate my wireframe and clone my App, I would love to see your result:)</summery>
+<h3>Duplicate my wireframe and clone my App, I would love to see your result:)</h3>
 
 <a href="https://www.figma.com/file/nMy5K9G6IpVROuhCtDenNz/note_it-(Repo)?node-id=0%3A1&t=BCeTSXEBppTjUkFs-1" target="blank">Click here to check my Figma</a>
 
@@ -55,7 +54,7 @@ npm i nanoid
 
 ### 🤓 Highlight of code snippets & Screenshots
 
-<summery>Editing properties in the SVG selector</summery>
+<h3>Editing properties in the SVG selector</h3>
 
   <details>
 
@@ -80,32 +79,35 @@ npm i nanoid
 
 </details> <br>
 
-<summery>Responsiveness of the website</summery>
+<h3>Responsiveness of the website</h3>
 
 <details>
 
-<summery>wide screen</summery>
+<h4>wide screen</h4>
 
 ![Responsiveness](./src/screenshots/wide_view.png)
 
-<h3>medium & small screen device</h3>
+<h4>medium & small screen device</h4>
 
 <div align="center">
 <img src="./src/screenshots/tablet_view.png" alt="medium screen view" width="40%"/>
 <img src="./src/screenshots/mobile_view.png" alt="medium screen view" width="30%"/>
 </div>
 
-<p>Using two media queries sizes for medium and small screen. the goal is to make it responsive in the main code, and make small changes to maximize the ux. In addition using the REM units to edit easily the size of components in the app</p>
+<p>Using two media queries sizes for medium and small screen. the goal is to make it responsive in the main code, 
+and make small changes to maximize the ux. In addition using the REM units to edit easily the size of components in the app</p>
 
 ```
 /* ===================== MEDIA QUERIES (MEDIUM DEVICES) =========================*/
 @media screen and (max-width: 1300px) {
-  <!-- change the font-site in the universal selector, wil adapt all the css in relation with the new font size -->
+  <!-- change the font-site in the universal selector,
+  wil adapt all the css in relation with the new font size -->
   * {
     font-size: 14px;
   }
 
-<!-- Change layout direction on the flexbox to adjust the appearance of the app for the medium, screen devices -->
+<!-- Change layout direction on the flexbox to adjust the appearance of
+the app for the medium, screen devices -->
   .App {
     width: 100%;
     flex-direction: column;
